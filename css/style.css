@@ -1,0 +1,254 @@
+/* font-family: 'Rubik', sans-serif; */
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #F4F7FB;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1550px;
+}
+
+/* headr area css */
+.header-area {
+    height: 84px;
+}
+.logo {
+    max-width: 262px;
+}
+
+.logo__link {
+    display: block;
+}
+
+.logo__link img {
+    width: 100%;
+}
+
+.nav {
+    width: 628px;
+}
+.nav__link {
+    /* width: 151px; */
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-right: auto;
+}
+
+.nav__link:hover {
+    color: #00A0EE;
+    transition: 0.3s ease-in;
+}
+
+.nav a,
+.nav-btn a {
+    font-size: 20px;
+    line-height: 24px;
+    color: #555963;
+}
+.nav-btn {
+    width: 361px;
+}
+
+.nav-btn__link {
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.nav-btn__link--btn {
+    background: #00A0EE;
+    color: #fff !important;
+    border-radius: 4px;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+main {
+    background: #fff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* pricing area css */
+.section-title h1 {
+    font-size: 68px;
+    color: #213A46;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-top: 48px;
+}
+.section-title p {
+    font-size: 27px;
+    color: #555963;
+    margin-top: 48px;
+}
+
+.pricing-area {
+    background: #F4F7FB;
+    margin: 0;
+}
+
+
+.pricing-heading img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+}
+
+.pricing-type {
+    font-size: 34px;
+    color: #26272C;
+}
+
+.pricing-heading {
+    height: 160px;
+    padding-top: 24px;
+}
+
+.pricing-corporate {
+    background: #031D3D;
+    margin-bottom: 48px;
+}
+
+.pricing-corporate h3,
+.pricing-corporate p {
+    color: #fff;
+}
+
+.pricing-area p {
+    font-size: 20px;
+    min-height: 56px;
+}
+p.trial,
+p.feature {
+    color: #868B97;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.plan-btn {
+    border-radius: 4px;
+    background: #00A0EE;
+    padding: 12px 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 72px;
+}
+
+.responsive-pricing {
+    display: none;
+}
+
+/* responsive */
+@media(max-width: 1250px) {
+    .nav {
+        width: 470px;
+    }
+    .nav-btn {
+        width: 330px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .nav {
+        width: 370px;
+    }
+    .nav-btn {
+        width: 280px;
+    }
+    .nav a,
+    .nav-btn a {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .section-title h1 {
+        font-size: 50px;
+        margin-top: 40px;
+    }
+    .section-title p {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+    .pricing-type {
+        font-size: 25px;
+    }
+    .pricing-area p {
+        font-size: 16px;
+    }
+    p.trial, p.feature {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .plan-btn {
+        font-size: 14px;
+        padding: 10px 5px; 
+    }
+}
+
+@media(max-width: 900px) {
+    .logo {
+        max-width: 220px;
+    }
+    .nav {
+        width: 323px;
+    }
+    .nav-btn {
+        width: 225px;
+    }
+    .nav a,
+    .nav-btn a {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .nav-btn__link--btn {
+        padding: 8px;
+        /* padding: 10px 12px; */
+    }
+}
+@media(max-width: 768px) {
+    .nav,
+    .nav-btn {
+        display: none !important;
+    }
+
+    span.menu-bar {
+        width: 50px;
+        margin-left: auto;
+        margin-right: 15px;
+        cursor: pointer;
+        display: block !important;
+    }
+    .pricing-area {
+        display: none;
+    }
+    .responsive-pricing {
+        display: block;
+    }
+    .responsive-two-col {
+        display: flex;
+    }
+    .responsive-two-col .col:first-child {
+        margin-right: 7.5px;
+    }
+    .responsive-two-col .col:last-child {
+        margin-left: 7.5px;
+    }
+    .responsive-pricing p {
+        min-height: 48px;
+    }
+    .pricing-corporate {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .plan-btn {
+        padding: 7px 6px;
+        font-size: 14px !important;
+    }
+}
